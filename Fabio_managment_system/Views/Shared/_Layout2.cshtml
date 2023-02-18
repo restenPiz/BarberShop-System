@@ -1,0 +1,123 @@
+﻿
+    <!DOCTYPE html>
+    <html>
+
+    <!-- Mirrored from bootstrapdash.com/demo/purple/laravel/template/demo_2/general-pages/blank-page by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Aug 2022 13:12:15 GMT -->
+    <!-- Added by HTTrack -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+    <head>
+        <title>Purple Pro Laravel Dashboard Template</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSRF Token -->
+        <meta name="_token" content="autH5JfIuC1Y4mO4J5xBedMogMj1KWSqpcWR3ocw">
+
+        <link rel="shortcut icon" href="~/wwwRoot/favicon.ico">
+
+        <!-- plugin css -->
+        <link media="all" type="text/css" rel="stylesheet" href="~/wwwRoot/assets/plugins/%40mdi/font/css/materialdesignicons.min.css">
+        <link media="all" type="text/css" rel="stylesheet" href="~/wwwRoot/assets/plugins/perfect-scrollbar/perfect-scrollbar.css">
+        <!-- end plugin css -->
+        <!-- plugin css here -->
+        <!-- common css -->
+        <link media="all" type="text/css" rel="stylesheet" href="~/wwwRoot/css/app.css">
+        <!-- end common css -->
+
+    </head>
+    <body style="background-color:white">
+        <nav class="     dynamic-active-class-disabled" id="sidebar" style="background-color:white;color:black">
+                <ul class="nav">
+                    <li class="nav-item nav-profile">
+                        <a href="#" class="nav-link">
+                            <div class="nav-profile-image">
+                                <img src="~/wwwRoot/assets/images/faces/face1.jpg" alt="profile" />
+                                <span class="login-status online"></span>
+                                <!--change to offline or busy as needed-->
+                            </div>
+                            <div class="nav-profile-text d-flex flex-column">
+                                <span class="font-weight-bold mb-2">Admin</span>
+                            </div>
+                            <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="/Home/Dashboard">
+                            <span class="menu-title">Inicio</span>
+                            <i class="mdi mdi-file-document-box menu-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" data-toggle="collapse" href="#error-pages" aria-expanded="false" aria-controls="error-pages">
+                            <span class="menu-title">Todos Funcionarios da Empresa</span>
+                            <i class="menu-arrow"></i>
+                            <i class="mdi mdi-security menu-icon"></i>
+                        </a>
+                        <div class="collapse " id="error-pages">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Funcionario/AddFuncionario">Adicionar Funcionario</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Funcionario/Todos_funcionarios">Todos Funcionarios</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" data-toggle="collapse" href="#erro" aria-expanded="false" aria-controls="error-pages">
+                            <span class="menu-title">Todas Viaturas</span>
+                            <i class="menu-arrow"></i>
+                            <i class="mdi mdi-security menu-icon"></i>
+                        </a>
+                        <div class="collapse " id="erro">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Corte/AddCorte">Adicionar Viatura Parqueada</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Corte/Todos_cortes">Todas Viaturas Parqueadas</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="/Home/Index">
+                            <span class="menu-title">Sair</span>
+                            <i class="mdi mdi-file-document-box menu-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav> 
+            
+                        @RenderBody()
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- base js -->
+        <script src="~/wwwRoot/js/app.js"></script>
+        <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+        <!-- end base js -->
+        <!-- plugin js -->
+        <!-- plugin js here -->
+        <!-- end plugin js -->
+        <!-- common js -->
+        <script src="~/wwwRoot/assets/js/off-canvas.js"></script>
+        <script src="~/wwwRoot/assets/js/hoverable-collapse.js"></script>
+        <script src="~/wwwRoot/assets/js/misc.js"></script>
+        <script src="~/wwwRoot/assets/js/settings.js"></script>
+        <script src="~/wwwRoot/assets/js/todolist.js"></script>
+        <!-- end common js -->
+        <!-- custom js here -->
+    </body>
+
+    <!-- Mirrored from bootstrapdash.com/demo/purple/laravel/template/demo_2/general-pages/blank-page by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Aug 2022 13:12:15 GMT -->
+</html>

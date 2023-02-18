@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Todos_funcionarios";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+
+}
+@model List<Fabio_managment_system.Models.Funcionario> 
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Todos Funcionarios</h4>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th> Id </th>
+                            <th> Nome do Funcionario </th>
+                            <th> Numero de viatura </th>
+                            <th> Departamento </th>
+                            <th> Idade </th>
+                            <th>  </th>
+                            <th>  </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id_funcionario</td>
+                                <td>@item.Nome</td>
+                                <td>@item.Morada</td>
+                                <td>@item.Cargo</td>
+                                <td>@item.Idade</td>
+                                <td>@Html.ActionLink("Editar", "Editar_funcionario", "Funcionario", new { Id_funcionario = item.Id_funcionario }, new { })</td>
+                                <td>@Html.ActionLink("Eliminar", "Eliminar_funcionario", "Funcionario", new { Id_funcionario = item.Id_funcionario }, new { })</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="margin-left:34rem;margin-top:17rem">
+    <form class="pt-3" action="/Home/Dashboard" post="post">
+        <div class="form-group">
+            <input style="width:15rem;height:5vh;border-radius:0;" type="text" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Nome do usuario" name="Nome">
+        </div><br />
+        <div class="form-group">
+            <input style="width:15rem;height:5vh;border-radius:0;" type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Senha" name="Senha">
+        </div><br />
+        <input style="width:15.5rem;height:5vh;border-radius:0;border:0;background-color:blue" type="submit" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium">
+    </form>
+</div>

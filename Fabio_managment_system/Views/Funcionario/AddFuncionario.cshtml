@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "AddFuncionario";
+
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Adicionar Funcionario</h4>
+            <form action="/Funcionario/Adicionar_funcionario" method="post">
+               
+                <div class="form-group">
+                    <label for="exampleInputName1">Nome</label>
+                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Nome do Funcionario" name="Nome">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Numero de Viatura</label>
+                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Numero de viatura" name="Morada">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Idade</label>
+                    <input type="number" class="form-control" id="exampleInputEmail3" placeholder="Idade" name="Idade">
+                </div>
+                <div class="form-group">
+                    <label for="exampleSelectGender">Departamento</label>
+                    <select name="Cargo" class="form-control" id="exampleSelectGender">
+                        <option>Operacoes</option>
+                        <option>Marketing</option>
+                        <option>Contabilidade</option>
+                        <option>Financas</option>
+                        <option>Recursos Humanos</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn btn-gradient-primary mr-2">
+            </form>
+        </div>
+    </div>
+</div>
